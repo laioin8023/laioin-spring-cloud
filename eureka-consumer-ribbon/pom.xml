@@ -6,12 +6,11 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.4.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
     <name>${artifactId}</name>
-    <artifactId>eureka-client</artifactId>
+    <artifactId>eureka-consumer-ribbon</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -24,10 +23,13 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-ribbon</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -41,6 +43,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-
 </project>

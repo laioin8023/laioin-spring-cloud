@@ -1,9 +1,9 @@
 spring:
   application:
-    name: eureka-client
+    name: eureka-consumer-feign
 
 server:
-  port: 5100
+  port: 5202
 
 eureka:
   client:

@@ -1,9 +1,9 @@
 spring:
   application:
-    name: eureka-client
+    name: eureka-consumer-ribbin
 
 server:
-  port: 5100
+  port: 5201
 
 eureka:
   client:
